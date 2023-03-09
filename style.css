@@ -1,0 +1,123 @@
+/* Estilos padrão */
+
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-flex;
+    background-image: linear-gradient(65deg, rgb(8, 8, 8), rgb(245, 90, 0));
+    max-height: 100%;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+p{
+  color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lYAPfvwtyBbSxiGRckbTv7H6e8jZ44UMVA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    max-height: 400px;
+    overflow-y: auto; 
+    padding: 20px;
+}
+
+
+input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+button{
+    text-align: center;
+}
+
+.resum{
+    background-color: rgb(219, 82, 2);
+    border-radius: 10px;
+    color: white;
+    padding: 1px;
+}
+
+.resum:hover{
+  background-color: rgba(0, 0, 0, 0.11);
+  color: rgb(228,75 , 4);
+  cursor: pointer;
+}
+
+.button{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(228, 75, 4);
+    color: white;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+h1:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Estilos para telas menores */
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  input {
+    padding: 10px;
+  }
+  .button {
+    padding: 5px;
+    font-size: 14px;
+  }
+}

@@ -35,7 +35,10 @@ function Calcular() {
   Resultado.innerHTML += `<p>${quantidadeTotalCarne / 1000} Kg de Carne</p>`;
   Resultado.innerHTML += `<p>${quantidadeTotalCerveja / 1000} L de Sucos</p>`;
   Resultado.innerHTML += `<p>${quantidadeTotalBebidas / 1000} L de Guaraná</p>`;
-  
+
+  setTimeout(function() {
+    location.reload();
+  }, 8000);
 }
 
 function carnePP(duração) {
